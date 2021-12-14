@@ -5,7 +5,8 @@ const address = document.getElementById('address');
 const city = document.getElementById('city');
 const code = document.getElementById('code');
 const revealH = document.getElementById('revealH');
-const comment = document.getElementById('comment')
+const comment = document.getElementById('comment');
+document.getElementById("form").submit();
 
 
 form.addEventListener('submit', e => {
