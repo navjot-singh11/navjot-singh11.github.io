@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+	<div class="headerA">
+		<h2>Contact me</h2>
+	</div>
+	<form id="form" class="form" action="https://formspree.io/f/xoqrqnqb" method="POST">
+		<div class="form-control">
+			<label for="fname">Full Name</label>
+			<input type="text" name="Name" placeholder="John Doe" id="fname" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="fname">Email</label>
+			<input type="email" name="Email" placeholder="johndoe123@domainname.com" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="fname">Address</label>
+			<input type="text" name="Address" placeholder="Address " id="address"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+        <div class="form-control">
+			<label for="fname">City</label>
+			<input type="text" name="City" placeholder="City" id="city"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+        <div class="form-control">
+			<label for="fname">Postal Code</label>
+			<input type="text" name="Postal Code" placeholder="A1A 1A1 " id="code"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="options">
+			<label for="fname">About:<br> <br></label>
+			<input type="radio" id="opt1" name="opt" value="opt1" onclick="javascript:check();">
+         <label for="opt1">Question</label><br>
+        <input type="radio" id="opt2" name="opt" value="opt2" onclick="javascript:check();">
+       <label for="opt2">Comment</label><br>
+      <input type="radio" id="opt3" name="opt"  value="opt3" onclick="javascript:check();">
+      <label for="opt3">Hiring</label>
+		</div>
+
+        <div class="form-control" >
+			<label for="fname"></label>
+			<input type="text" name="Hourly Rate" placeholder="Hourly Rate" id="revealH" style="display: none;"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+        <div class="form-control" >
+			<label for="fname"></label>
+			<textarea rows="15" cols="40" id="comment" style="display: none;" >
+                </textarea>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+        
+		<button>Submit</button>
+	</form>
+</div>
+    <script type="text/javascript" src="./Script1.js"></script>
+
+</body>
+</html>
