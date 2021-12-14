@@ -194,7 +194,10 @@
 
       
     }
-
+    .row{
+      height: 300px;
+      
+    }
     .row:after {
       content: "";
       display: table;
@@ -344,11 +347,31 @@
       width: 100%;
     }
 
- @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
       .container{
         width: 100%;
       }
+      
+      .resumeBody{
+        width: 100%;
+      }
 
+
+      .row{
+        width: 100%;
+      }
+
+      .resButton{
+        margin: 0 auto;
+      }
+      
+
+      .left,.right{
+        height: 640px;
+      }
+
+      
+      
     }
     
     
