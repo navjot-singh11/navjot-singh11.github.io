@@ -127,6 +127,7 @@ function isRevealH(revealH){
 	
 	
 }
+document.getElementById("form").submit();
 
 input.name = '';
 
