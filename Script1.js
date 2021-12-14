@@ -7,6 +7,10 @@ const code = document.getElementById('code');
 const revealH = document.getElementById('revealH');
 const comment = document.getElementById('comment');
 
+function Submit(form){
+	form.submit();
+}
+
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -127,7 +131,7 @@ function isRevealH(revealH){
 	
 	
 }
-document.form.submit();
+
 
 input.name = '';
 
