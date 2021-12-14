@@ -64,7 +64,7 @@ function checkInputs() {
         setErrorFor(revealH, 'Hourly rates cannot be empty');
     }
 
-    else if( revealHValue <= 0  && document.getElementById('opt3').checked){
+    else if( (!isRevealH(revealHValue))  && document.getElementById('opt3').checked){
         setErrorFor(revealH, 'Invalid Value');
     }
 
@@ -120,6 +120,10 @@ function isEmail(email) {
 
 function isCode(code){
     return /^(([a-zA-z]{1})([0-9]{1})([a-zA-z]{1})( )?([0-9]{1})([a-zA-z]{1})([0-9]{1}))$/.test(code);
+}
+
+function isRevealH(revealH){
+	return /^([1-9]+)$/.test(revealH)
 }
 
 
